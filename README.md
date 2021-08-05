@@ -2,4 +2,5 @@
 
 # Setup
 
-- Install these technologies
+- Install TypeScript
+- npm install -g typescript
