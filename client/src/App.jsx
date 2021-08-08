@@ -1,6 +1,7 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
+import { Container, Menu } from '@material-ui/core';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -15,9 +16,11 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          Hi from App
-        </div>
+        <Container>
+          <div>
+            Hi from App
+          </div>
+        </Container>
       </Router>
 
     );
