@@ -12,9 +12,12 @@ class App extends React.Component {
   }
   render () {
     return (
-    <div>
-      Hi from App
-    </div>
+      <Router>
+        <div>
+          Hi from App
+        </div>
+      </Router>
+
     );
   }
 
