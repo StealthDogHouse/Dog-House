@@ -1,0 +1,12 @@
+import React, { useState, useEffect, useRef } from 'react'
+
+export default function HomePage(props) {
+
+
+return (
+  <div>
+    Home Page
+  </div>
+)
+
+}
