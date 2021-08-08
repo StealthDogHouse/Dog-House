@@ -1,5 +1,7 @@
 const example = 'world';
 
-export function hello(world: string = example): string {
+function hello(world: string = example): string {
   return `Hello ${world}! `;
 }
+
+export default hello;

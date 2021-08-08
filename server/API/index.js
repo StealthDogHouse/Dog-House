@@ -1,3 +1,3 @@
-const output = 'PUT STUFF HERE'
+const output = 'PUT STUFF HERE';
 
-export default output
+export default output;

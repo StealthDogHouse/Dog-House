@@ -1,0 +1,9 @@
+__tests__
+.eslintrc.js
+database
+client/dist/
+node_modules
+client/src/index.js
+client/src/index.ts
+webpack.config.js
+dist

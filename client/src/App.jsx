@@ -1,16 +1,18 @@
-import React, {useState, useEffect } from 'react';
-import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
-import HomePage from './pages/HomePage'
+import HomePage from './pages/HomePage';
 
 class App extends React.Component {
-
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {};
   }
-  render () {
+
+  render() {
     return (
       <Router>
         <div>
@@ -20,7 +22,6 @@ class App extends React.Component {
 
     );
   }
-
 }
 
 export default App;
