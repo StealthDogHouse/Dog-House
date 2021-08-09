@@ -1,30 +1,38 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import { Container, Menu } from '@material-ui/core';
+import {
+  Container, Menu, MenuItem, Button,
+} from '@material-ui/core';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
 import HomePage from './pages/HomePage';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+export default function App() {
+  const [openMenu, setOpenMenu] = useState(null);
+  const HandleMenu = () => {
+    setOpenMenu(true);
+  };
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
+  return (
+    <Router>
+      <Container>
+        <Button onClick={HandleMenu}> Open Menu </Button>
+        <Menu open={openMenu} onClose={closeMenu}>
+          <MenuItem onClick={closeMenu}>
+            <Link to="/home"> Home </Link>
+          </MenuItem>
+          <MenuItem onClick={closeMenu}> About </MenuItem>
+        </Menu>
 
-  render() {
-    return (
-      <Router>
-        <Container>
-          <div>
-            Hi from App
-          </div>
-        </Container>
-      </Router>
+        <Route exact path="/home">
+          <HomePage />
+        </Route>
+      </Container>
+    </Router>
 
-    );
-  }
+  );
 }
-
-export default App;
