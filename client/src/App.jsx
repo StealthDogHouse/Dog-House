@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
 import HomePage from './pages/HomePage';
+import Message from './components/Test.tsx';
 
 export default function App() {
   const [openMenu, setOpenMenu] = useState(null);
