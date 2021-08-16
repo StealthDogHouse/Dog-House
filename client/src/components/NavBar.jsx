@@ -51,8 +51,8 @@ export default function MenuAppBar() {
           label={auth ? 'Logout' : 'Login'}
         />
       </FormGroup>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="static" color="primary">
+        <Toolbar color="primary">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>

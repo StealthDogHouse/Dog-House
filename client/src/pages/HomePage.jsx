@@ -8,7 +8,7 @@ import theme from '../theme';
 export default function HomePage(props) {
   return (
     <div>
-      <NavBar theme={theme}/>
+      <NavBar theme={theme} />
       Home Page
       <Test />
     </div>
