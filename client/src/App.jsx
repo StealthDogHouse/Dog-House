@@ -11,7 +11,7 @@ import HomePage from './pages/HomePage';
 import Message from './components/Test.tsx';
 
 export default function App() {
-  const [openMenu, setOpenMenu] = useState(null);
+  const [openMenu, setOpenMenu] = useState(() => {});
   const HandleMenu = () => {
     setOpenMenu(true);
   };
