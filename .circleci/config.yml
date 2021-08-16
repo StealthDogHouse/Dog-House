@@ -9,7 +9,7 @@ workflows:
   # Name the workflow "welcome"
   lint:
     # Run the welcome/run job in its own container
-    steps:
+    jobs:
       - checkout
       - node/install-packages
       - run: npm run lint
