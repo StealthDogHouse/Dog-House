@@ -15,7 +15,7 @@
 version: 2.1
 
 jobs:
-  test:
+  lint:
     docker:
       - image: cimg/node:12.10.0
     steps:
@@ -34,9 +34,9 @@ jobs:
             - ~/.npm
       - run:
           name: Run Tests
-          command: npm run test
+          command: npm run lint
 
 workflows:
   orb-free-workflow:
     jobs:
-      - test
+      - lint
