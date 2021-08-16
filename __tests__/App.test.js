@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect'
-import App from '../client/src/components/App'
+import App from '../client/src/App.jsx'
 
 
 //basic render test, no data
